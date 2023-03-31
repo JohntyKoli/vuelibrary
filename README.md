@@ -7,6 +7,7 @@ This is an vue app for consuming apis created. To get all the apis please visit 
 
 ## Installation
 
+
 Clone the repository
 
     git clone https://github.com/JohntyKoli/vuelibrary.git

@@ -1,10 +1,8 @@
 <template>
     <div>
-        <div class="container">
+  
+        <div class="container mt-5">
             <button class=" btn border border-info float-right" @click="goBack"> {{'<<<'}}</button>
-        </div>
-        <div class="container">
-            
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
@@ -60,7 +58,7 @@
 
                     </div>
 
-                    <button type="button" @click="editBook" class="btn btn-primary">Save</button>
+                    <button type="button" @click="editBook" class="btn border border-rounded border-info primary-button">Save</button>
                 </form>
             </div>
         </div>

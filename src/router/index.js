@@ -50,10 +50,10 @@ const routes = [
     component: BookEdit,
     meta: { requiresAuth: true }
   },
-  // {
-  //   path: '/:pathMatch(.*)*',
-  //   component: PageNotFound
-  // }
+  {
+    path: '/:pathMatch(.*)*',
+    component: PageNotFound
+  }
 
 ]
 
@@ -63,12 +63,9 @@ const router = createRouter({
 })
 
 router.beforeEach(async (to, from, next) => {
-  // console.log("sdfghjk");
 
   await store.dispatch('checkUser')
   if (to.meta.requiresAuth) {
-    console.log("sdfghjk")
-
     if (!store.getters.isUserLoggedIn) {
       next({ name: 'login' })
     } else {

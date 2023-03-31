@@ -22,7 +22,7 @@
                                 </div>
                                 <p :style="{ color: 'red' }" v-if="this.error">{{ this.error }}
                                     </p>
-                                <button type="submit" class="btn btn-primary" @click="loginsubmit">Submit</button>
+                                <button type="submit" class="btn border-rounded border-info primary-button" @click="loginsubmit">Submit</button>
                             </form>
                         </div>
                     </div>

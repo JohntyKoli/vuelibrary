@@ -1,8 +1,8 @@
 <template>
-    <div class="container mt-2 ">
+    <div class="container fixed-top">
 
-        <nav class="navbar navbar-expand-lg  navbar-transparent">
-            <router-link class="navbar-brand " to="/">
+        <nav class="navbar  navbar-expand-lg  navcolor">
+            <router-link class="navbar-brand primary-font-color" to="/">
                 <h2>VUE Library</h2>
             </router-link>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -17,7 +17,7 @@
                 v-model="search" @keyup="searchData">
             </div> -->
                 <form class="mx-2 my-auto d-inline w-50">
-                    <input type="text" class="form-control border border-right-0 transparent-input "
+                    <input type="text" class="form-control  transparent-input"
                         placeholder="Search for title, author, genre, publisher ..." v-model="search" @keyup="searchData">
                 </form>
 
@@ -25,14 +25,16 @@
                     <!-- <li class="nav-item">
                     <router-link class="nav-link" to='/'>Home</router-link>
                 </li> -->
-                    <li class="nav-item" v-if="isUserLoggedIn">
-                        <router-link class="nav-link" to='/add-book'>Add</router-link>
+                
+
+                    <li class="nav-item " v-if="isUserLoggedIn">
+                        <router-link class="nav-link primary-font-color" to='/add-book'>Add </router-link>
                     </li>
-                    <li class="nav-item" v-if="!isUserLoggedIn">
-                        <router-link class="nav-link" to='/login'>Login</router-link>
+                    <li class="nav-item " v-if="!isUserLoggedIn">
+                        <router-link class="nav-link primary-font-color" to='/login'>Sign In</router-link>
                     </li>
-                    <li class="nav-item" v-if="isUserLoggedIn">
-                        <a class="nav-link" href="javascript:void(0)" @click="logoutuser">Logout</a>
+                    <li class="nav-item " v-if="isUserLoggedIn">
+                        <a class="nav-link primary-font-color" href="javascript:void(0)" @click="logoutuser">Logout</a>
                     </li>
                 </ul>
             </div>
@@ -98,7 +100,16 @@ export default {
 <style>
 
 input.transparent-input {
-    background-color: transparent !important;
+    
+    border: 1px solid #fa7040;
+    border-radius: 20px;
+}
+.navcolor{
+    background-color: #ffffff;
+    /* background-color: #dfe3eb; */
 
 }
+/* .navbar-brand{
+    color:#fa7040
+} */
 </style>

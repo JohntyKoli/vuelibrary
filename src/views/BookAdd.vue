@@ -1,9 +1,8 @@
 <template>
     <div>
-        <div class="container">
-            <button class=" btn border border-info float-right" @click="goBack"> {{'<<<'}}</button>
-        </div>
-        <div class="container">
+
+        <div class="container mt-5">
+            <button class=" btn border border-info" @click="goBack"> {{'<<<'}}</button>
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
@@ -67,7 +66,7 @@
 
                                 </div>
 
-                                <button type="submit" class="btn btn-primary" @click="addBook">Add Book</button>
+                                <button type="submit" class="btn border border-rounded border-info primary-button" @click="addBook">Add Book</button>
                             </form>
                         </div>
                     </div>

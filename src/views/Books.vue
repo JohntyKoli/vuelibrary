@@ -12,7 +12,7 @@
                 <img :src="book.image" class="card-img-top">
                 <div class="card-body">
                   <h5 class="card-title text-center"> 
-                    <router-link :to="'/book/view/' + book.id" href="javascript:void(0)" > {{ book.title }}</router-link>
+                    <router-link class="title" :to="'/book/view/' + book.id" href="javascript:void(0)" > {{ book.title }}</router-link>
                    </h5>
                   <p class="card-subtitle mb-0 text-muted text-center "> by {{ book.author }}</p>
 
@@ -21,15 +21,14 @@
 
                   <p class="m-0 text-muted"> Published at {{ book.published }} </p>
                   <p class="m-0 text-muted">By {{ book.publisher }}</p>
-                  <p class="m-0 text-muted">Genre : {{ book.genre }}</p>
-
-                  <router-link :to="'/book/edit/' + book.id" class="btn m-0 p-1 border border-rounded border-info"
+                  <p class="m-0 text-muted">Genre : {{ book.genre }}</p>                   
+                  <router-link :to="'/book/edit/' + book.id" class="btn  border border-rounded border-info primary-button"
                     v-if="isUserLoggedIn">
-                    <i class="fas fa-link"></i>Edit</router-link>
+                   Edit</router-link>
                   <span class="m-2"></span>
-                  <span class="btn  mr-2  m-0 p-1 border border-rounded border-info" v-if="isUserLoggedIn"
+                  <span class="btn border border-rounded border-info primary-button" v-if="isUserLoggedIn"
                     @click="deleteBook(book.id)">
-                    <i class="fas fa-link"></i>Delete</span>
+                   Delete</span>
                   <!-- <span class=" border  mb-2   border-info custom-border">Genres : {{ book.genre }}</span> -->
                 </div>
 
@@ -172,7 +171,7 @@ export default {
   height: 100%;
   margin-bottom: 2rem;
   border: 0;
-  box-shadow: 0px 0px 8px 0.3px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 8px 0.3px rgba(0, 0, 0, 0.2);
 }
 
 .card-img-top {
@@ -183,5 +182,10 @@ export default {
 
 .custom-border {
   border-radius: 15px;
+}
+.title{
+text-decoration: none;
+color: #4ac5e3;
+
 }
 </style>
