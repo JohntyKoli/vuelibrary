@@ -41,8 +41,8 @@ export default {
 
     data: () => {
         return {
-            login: "",
-            password: "",
+            login: "admin@email.com",
+            password: "Admin@1234",
             error:''
 
         };
