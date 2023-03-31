@@ -1,11 +1,11 @@
 <template>
   <div>
 
-  
-  <Navbar></Navbar>
 
-  <router-view />
-</div>
+    <Navbar></Navbar>
+
+    <router-view />
+  </div>
 </template>
 
 
@@ -18,3 +18,7 @@ export default {
   }
 }
 </script>
+
+<style>
+
+</style>
