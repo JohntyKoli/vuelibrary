@@ -1,0 +1,26 @@
+body {
+    overflow: auto !important;
+    height: 100vh !important;
+    font-size: 1em !important;
+    color: #000 !important;
+    font-family: Roboto !important;
+    background-color: #dfe3eb !important;
+    padding-top: 60px !important;
+  }
+  
+  .primary-font-color {
+    color: #fa7040 !important
+  }
+  
+  .primary-button {
+    background-color: #fa7040;
+    color: #dfe3eb;
+  }
+
+  .swal2-confirm{
+    background-color: #33a871!important;
+  }
+
+  .swal2-backdrop-show{
+    background: rgba(0,0,0,0.8)!important;
+  }
