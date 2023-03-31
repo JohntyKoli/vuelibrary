@@ -23,7 +23,7 @@ Install all the dependencies using npm
 Change the base url for the API in  src/axios.js   
 
 ```diff
--  Keep the same server address as that of vuelibrrayapi
+-  Keep the same server address as that of vuelibraryapi
 
 ```
 
